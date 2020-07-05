@@ -9,12 +9,14 @@
 
 ### Workflow type & role
 
-This Workflow (__Analytical Circular__) has the final goal (*like the other Workflows*) the acoustic attenuation matrix calculus.
+This Workflow (__Analytical Circular__) has the final goal, like others Workflows, the acoustic attenuation matrix calculus.
 This Workflow is for canonical geometries, that is to say we do not have to generate any mesh. 
 
-In numerical cases, ACTRAN automatically generates mesh supposed to be uniformed. In analytical cases, we don't have to create any mesh and we don't use ACTRAN solver but MADIWHAX solver. Sounds simple right ?
+In numerical cases, ACTRAN automatically generates mesh supposed to be uniformed. In analytical cases, we do not have to create any mesh. Sounds simple right ?
 
-The air inlet duct is therefore assumed to be more or less uniform. We do not calculate any flow. There is no weighted average to be used for computation in various nodes of mesh.
+
+The air inlet or the bypass duct is therefore assumed to be more or less uniform. We do not calculate any flow either.
+For the acoustic computation, we no longer use the ACTRAN solver, as was the cas in numerical workflows but a new solver nammed MADIWHAX. 
 
 __This Workflow therefore presents four boxes :__
 
